@@ -71,19 +71,19 @@ export const listarraycost = writable(
         {
             iconlist: "lucide:monitor-dot",
             headlist: "HRIS",
-            titlelist: "Software yang bertujuan memberikan informasi sumber daya manusia",
+            titlelist: "Software yang bertujuan memberikan informasi dana manajemen sumber daya manusia",
             group: "a"
         },
         {
             iconlist: "lucide:monitor-dot",
-            headlist: "HRIS",
-            titlelist: "Software yang bertujuan memberikan informasi sumber daya manusia",
+            headlist: "SOFTWARE AKUNTANSI",
+            titlelist: "Software lengkap untuk mendukung kegiatan Akutansi yang berbasis modularitas",
             group: "a"
         },
         {
             iconlist: "lucide:monitor-dot",
-            headlist: "HRIS",
-            titlelist: "Software yang bertujuan memberikan informasi sumber daya manusia",
+            headlist: "MANAJEMEN ASSET",
+            titlelist: "Software untuk menajemen asset mulai dar pnegadaan sampai dengan pemusnahaan",
             group: "a"
         }
     ]

@@ -68,10 +68,10 @@
 		</div>
 		<div class="text-center basis-full">
 			<h1 class="text-3xl font-bold leading-7 text-surface-600 font_gelaso pt-10">
-				berikut daftar harga pengerjaan software
+				Daftar harga pengerjaan Software
 			</h1>
 		</div>
-		<div class="ml-10 mr-10 pt-5">
+		<div class="ml-10 mr-10 pt-10">
 			<div class="grid gap-2 text-center md:gap-4 md:grid-cols-2 md:grid-flow-row lg:grid-cols-3">
 				{#each $arraycost as itemlist}
 					<div>
@@ -87,12 +87,12 @@
 									{#each $listarraycost as listcost}
 										{#if (itemlist.group = listcost.group)}
 											<div class=" flex flex-row items-center justify-center pt-4">
-												<div class=" basis-1/4 pl-5">
-													<Icon icon={listcost.iconlist} style="font-size: 45px" />
+												<div class=" basis-1/4 pl-6">
+													<Icon icon={listcost.iconlist} style="font-size: 35px" />
 												</div>
 												<div class=" basis-3/4 text-left">
 													<div class="flex flex-col">
-														<div class="text-xl font-bold font_gelaso text-surface-600">
+														<div class="text-xl font-bold font_gelaso text-surface-600 pb-1">
 															<b>{listcost.headlist}</b>
 														</div>
 														<div class="text-lg font_gelaso leading-6 text-surface-500">
