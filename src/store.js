@@ -61,8 +61,24 @@ export const arraycost = writable(
     [
         {
             icon: "mdi:company",
-            group: "a"
-        }
+            group: "a",
+            price: "START 5 JUTA"
+        },
+        {
+            icon: "healthicons:market-stall",
+            group: "b",
+            price: "START 4 JUTA"
+        },
+        {
+            icon: "material-symbols:business-center-rounded",
+            group: "c",
+            price: "START 1 JUTA"
+        },
+        {
+            icon: "material-symbols:inbox-customize",
+            group: "d",
+            price: "START 1 JUTA"
+        },
     ]
 )
 
@@ -71,20 +87,87 @@ export const listarraycost = writable(
         {
             iconlist: "lucide:monitor-dot",
             headlist: "HRIS",
-            titlelist: "Software yang bertujuan memberikan informasi dana manajemen sumber daya manusia",
-            group: "a"
+            titlelist: "Software yang bertujuan memberikan informasi dan untuk manajemen sumber daya manusia",
+            group: "a",
+            highlight: "t"
         },
         {
             iconlist: "lucide:monitor-dot",
             headlist: "SOFTWARE AKUNTANSI",
             titlelist: "Software lengkap untuk mendukung kegiatan Akutansi yang berbasis modularitas",
-            group: "a"
+            group: "a",
+            highlight: "t"
         },
         {
             iconlist: "lucide:monitor-dot",
             headlist: "MANAJEMEN ASSET",
-            titlelist: "Software untuk menajemen asset mulai dar pnegadaan sampai dengan pemusnahaan",
-            group: "a"
+            titlelist: "Software menajemen asset mulai dari pengadaan sampai dengan pemusnahaan",
+            group: "a",
+            highlight: "t"
+        },
+        {
+            iconlist: "eos-icons:software-outlined",
+            headlist: "POINT OF SALE",
+            titlelist: "Software yang bertujuan memberikan informasi dan untuk manajemen sumber daya manusia",
+            group: "b",
+            highlight: "t"
+        },
+        {
+            iconlist: "eos-icons:software-outlined",
+            headlist: "CRM",
+            titlelist: "Software untuk mengelola data riwayat pelanggan, mulai dari prospek hingga transaksi pelanggan ",
+            group: "b",
+            highlight: "t"
+        },
+        {
+            iconlist: "eos-icons:software-outlined",
+            headlist: "MANAJEMEN STOK BARANG",
+            titlelist: "Software untuk mengelola semua aspek persediaan barang, mulai dari penerimaan s/d pengiriman",
+            group: "b",
+            highlight: "t"
+        },
+        {
+            iconlist: "fluent:app-generic-32-filled",
+            headlist: "COMPANY PROFILE",
+            titlelist: "Website untuk menampilkan informasi dari perusahaan, seperti deskripsi, produk dan kontak perusahaan",
+            group: "c",
+            highlight: "t"
+        },
+        {
+            iconlist: "fluent:app-generic-32-filled",
+            headlist: "LANDING PAGE",
+            titlelist: "Website yang di desain khusus dengan mindset marketing untuk pemasaran / pengenalan produk",
+            group: "c",
+            highlight: "t"
+        }
+        ,
+        {
+            iconlist: "fluent:app-generic-32-filled",
+            headlist: "PORTOFOLIO",
+            titlelist: "Website yang di desain khusus untuk menunjukkan pengalaman, skill, dan karya seseorang",
+            group: "c",
+            highlight: "t"
+        },
+        {
+            iconlist: "tdesign:app",
+            headlist: "SOFTWARE MANUFAKTUR",
+            titlelist: "Software untuk menunjang proses produksi barang agar berjalan dengan baik",
+            group: "d",
+            highlight: "t"
+        },
+        {
+            iconlist: "tdesign:app",
+            headlist: "IOT DEVICE",
+            titlelist: "Pembuatan perangkat fisik yang terhubung ke jaringan internet untuk bekerja secara fungsional",
+            group: "d",
+            highlight: "t"
+        },
+        {
+            iconlist: "tdesign:app",
+            headlist: "CUSTOM SOFTWARE",
+            titlelist: "Software yang di buat khusus untuk solusi dari permasalahan binis anda",
+            group: "d",
+            highlight: "y"
         }
     ]
 )
