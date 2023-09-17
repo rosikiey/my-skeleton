@@ -88,7 +88,14 @@
 										{#if itemlist.group == listcost.group}
 											<div class=" flex flex-row items-center justify-center pt-4">
 												<div class=" basis-1/6 pl-10 lg:basis-1/5">
-													<Icon icon={listcost.iconlist} style="font-size: 35px" />
+													{#if listcost.highlight == 't'}
+														<Icon icon={listcost.iconlist} style="font-size: 35px" />
+													{:else}
+														<Icon
+															icon={listcost.iconlist}
+															style="font-size: 45px;color: #f54e42;"
+														/>
+													{/if}
 												</div>
 												<div class=" basis-5/6 lg:basis-4/5 text-left">
 													<div class="flex flex-col">
@@ -115,7 +122,7 @@
 								</div>
 							</span>
 							<span slot="tfooter">
-								<h2 class="text-3xl leading-tight font_bebas_neu text-surface-500 pt-2">
+								<h2 class="text-3xl leading-tight font_bebas_neu text-orange-500 pt-2">
 									<b>{itemlist.price}</b>
 								</h2>
 							</span>

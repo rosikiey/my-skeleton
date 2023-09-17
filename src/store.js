@@ -163,7 +163,7 @@ export const listarraycost = writable(
             highlight: "t"
         },
         {
-            iconlist: "tdesign:app",
+            iconlist: "carbon:app",
             headlist: "CUSTOM SOFTWARE",
             titlelist: "Software yang di buat khusus untuk solusi dari permasalahan binis anda",
             group: "d",
