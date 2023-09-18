@@ -6,20 +6,20 @@
 	import Icon from '@iconify/svelte';
 </script>
 
-<div class="container mx-auto min-w-fit md:max-h-screen">
-	<div class="grid items-start grid-rows-2 lg:gap-2 justify-items-center md:grid-cols-2 ">
-		<div class="container py-5 px-10 lg:py-10 lg:px-10  ">
-			<div class="container ">
+<div class="container mx-auto min-w-fit md:max-h-screen" id="section-home">
+	<div class="grid items-start grid-rows-2 lg:gap-2 justify-items-center md:grid-cols-2">
+		<div class="container py-5 px-10 lg:py-10 lg:px-10">
+			<div class="container">
 				<img
-				src={imgBg}
-				class="object-contain ease-in-out rounded-lg shadow-none transition-shadow lg:px-10 lg:py-15"
-				alt="icon_nav"
-			/>
+					src={imgBg}
+					class="object-contain ease-in-out rounded-lg shadow-none transition-shadow lg:px-10 lg:py-15"
+					alt="icon_nav"
+				/>
 			</div>
 		</div>
 		<div class="container py-10 px-10 lg:py-20 lg:px-10">
 			<div class="grid grid-rows-2 justify-items-center">
-				<div class="container px-10 py-10  lg:px-20 lg:py-20">
+				<div class="container px-10 py-10 lg:px-20 lg:py-20">
 					<img
 						src={imgMoto}
 						class="object-contain transition-shadow duration-300 ease-in-out rounded-lg shadow-none"
@@ -29,7 +29,7 @@
 				<div>
 					<button type="button" class="btn btn-xl variant-filled-surface">
 						<Icon icon="icon-park-outline:cooperative-handshake" style="font-size: 35px" />
-						<span><b>Order Now !!!</b></span>
+						<span><b>Price List !</b></span>
 					</button>
 				</div>
 			</div>
@@ -37,7 +37,7 @@
 	</div>
 </div>
 <div class="containe mx-auto min-w-fit md:max-h-screen">
-	<div>
+	<div id="section-about">
 		<div class="pb-8 text-center">
 			<h1 class=" text-2xl md:text-3xl font-bold leading-7 text-surface-600 font_gelaso">
 				Apa keuntungan bekerja sama dengan kami ?
@@ -69,6 +69,8 @@
 				{/each}
 			</div>
 		</div>
+	</div>
+	<div id="section-price">
 		<div class="text-center basis-full">
 			<h1 class="text-3xl font-bold leading-7 text-surface-600 font_gelaso pt-10">
 				Daftar harga pengerjaan Software
@@ -89,7 +91,9 @@
 								<div class="grid grid-rows-3">
 									{#each $listarraycost as listcost}
 										{#if itemlist.group == listcost.group}
-											<div class=" flex flex-row items-center justify-center pt-2 md:pt-4 h-24 lg:h-28 md:h-32">
+											<div
+												class=" flex flex-row items-center justify-center pt-2 md:pt-4 h-24 lg:h-32 md:h-32"
+											>
 												<div class=" basis-1/6 pl-6 lg:pl-10 md:pl-2 md:basis-1/5">
 													{#if listcost.highlight == 't'}
 														<Icon icon={listcost.iconlist} style="font-size: 35px" />

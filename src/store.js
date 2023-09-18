@@ -121,7 +121,7 @@ export const listarraycost = writable(
         },
         {
             iconlist: "eos-icons:software-outlined",
-            headlist: "MANAJEMEN STOK BARANG",
+            headlist: "MANAJEMEN STOK",
             titlelist: "Software untuk mengelola semua aspek persediaan barang, mulai dari penerimaan s/d pengiriman",
             group: "b",
             highlight: "t"

@@ -11,18 +11,20 @@
 	import logoKu from '../assets/logoku5x.png';
 	import logoWa from '../assets/wa.png';
 	import Icon from '@iconify/svelte';
+	import { animateScroll } from 'svelte-scrollto-element';
 
-	let click_menu = 'Y';
+	let click_menu = 'T';
 
 	function change_show() {
-		if (click_menu=='Y'){
+		if (click_menu == 'Y') {
 			click_menu = 'T';
-		}else{
+		} else {
 			click_menu = 'Y';
 		}
 	}
 </script>
 
+<!-- svelte-ignore a11y-click-events-have-key-events -->
 <AppShell>
 	<svelte:fragment slot="header">
 		<AppBar>
@@ -39,7 +41,7 @@
 						<div
 							class="hover:text-secondary-400 hover:cursor-pointer ml-10 mt-5 md:mt-3 md:text-lg font_gelaso"
 						>
-							<a href="/about"><p>About</p></a>
+							<a href="/about"> about </a>
 						</div>
 						<div
 							class="hover:text-secondary-400 hover:cursor-pointer mt-5 ml-5 md:ml-0 md:mt-3 md:text-lg font_gelaso"
@@ -60,28 +62,27 @@
 				<div class="block md:hidden">
 					<div class="grid grid-cols-1 gap-2">
 						<div>
-							<button type="button" on:click={change_show} class="btn-icon btn-icon-sm variant-ringed-surface"><Icon icon="ph:list-light" style="font-size: 25px" /></button>
+							<button
+								type="button"
+								on:click={change_show}
+								class="btn-icon btn-icon-sm variant-ringed-surface"
+								><Icon icon="ph:list-light" style="font-size: 25px" /></button
+							>
 						</div>
 					</div>
 				</div>
 			</svelte:fragment>
 			<svelte:fragment slot="headline">
-				{#if click_menu=='Y'}
+				{#if click_menu == 'Y'}
 					<div class="block md:hidden bg-surface-200">
 						<div class="container grid grid-rows-2 text-right space-y-1">
-							<div
-								class="hover:text-secondary-400 hover:cursor-pointer ml-10 text-xl font_gelaso"
-							>
+							<div class="hover:text-secondary-400 hover:cursor-pointer ml-10 text-xl font_gelaso">
 								<a href="/about"><p>About</p></a>
 							</div>
-							<div
-								class="hover:text-secondary-400 hover:cursor-pointer ml-5 text-xl font_gelaso"
-							>
+							<div class="hover:text-secondary-400 hover:cursor-pointer ml-5 text-xl font_gelaso">
 								<p>Pricing</p>
 							</div>
-							<div
-								class="hover:text-secondary-400 hover:cursor-pointer ml-5 text-xl font_gelaso"
-							>
+							<div class="hover:text-secondary-400 hover:cursor-pointer ml-5 text-xl font_gelaso">
 								<p>Contact Us</p>
 							</div>
 						</div>
@@ -92,6 +93,6 @@
 	</svelte:fragment>
 	<slot />
 	<svelte:fragment slot="footer">
-		<p>oke</p>
+		<a on:click={() => animateScroll.scrollToBottom()}> Scroll to bottom </a>
 	</svelte:fragment>
 </AppShell>
