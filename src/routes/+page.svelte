@@ -75,7 +75,7 @@
 			</h1>
 		</div>
 		<div class="ml-10 mr-10 pt-10">
-			<div class="grid gap-2 text-center md:gap-4 lg:grid-cols-2">
+			<div class="grid gap-2 text-center md:gap-4 md:grid-cols-2">
 				{#each $arraycost as itemlist}
 					<div>
 						<Card classCard="card variant-soft-surface">
@@ -89,8 +89,8 @@
 								<div class="grid grid-rows-3">
 									{#each $listarraycost as listcost}
 										{#if itemlist.group == listcost.group}
-											<div class=" flex flex-row items-center justify-center pt-4">
-												<div class=" basis-1/6 pl-10 lg:basis-1/5">
+											<div class=" flex flex-row items-center justify-center pt-2 md:pt-4 h-24 lg:h-28 md:h-32">
+												<div class=" basis-1/6 pl-6 lg:pl-10 md:pl-2 md:basis-1/5">
 													{#if listcost.highlight == 't'}
 														<Icon icon={listcost.iconlist} style="font-size: 35px" />
 													{:else}
