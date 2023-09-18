@@ -7,27 +7,30 @@
 </script>
 
 <div class="container mx-auto min-w-fit md:max-h-screen">
-	<div class="grid items-end grid-rows-2 gap-2 justify-items-center md:grid-cols-2">
-		<div class=" min-w-fit md:min-h-screen md:mt-5">
-			<img
+	<div class="grid items-start grid-rows-2 lg:gap-2 justify-items-center md:grid-cols-2 ">
+		<div class="container py-5 px-10 lg:py-10 lg:px-10  ">
+			<div class="container ">
+				<img
 				src={imgBg}
-				class="h-auto max-w-sm transition-shadow duration-300 ease-in-out rounded-lg shadow-none md:max-w-lg lg:max-w-xl"
+				class="object-contain ease-in-out rounded-lg shadow-none transition-shadow lg:px-10 lg:py-15"
 				alt="icon_nav"
 			/>
+			</div>
 		</div>
-		<div class="flex items-center pb-20 min-w-fit md:pb-0 md:min-h-screen md:mb-0">
-			<div class="grid content-end grid-rows-2 gap-5 justify-items-center">
-				<div class=" md:-mb-15">
+		<div class="container py-10 px-10 lg:py-20 lg:px-10">
+			<div class="grid grid-rows-2 justify-items-center">
+				<div class="container px-10 py-10  lg:px-20 lg:py-20">
 					<img
 						src={imgMoto}
-						class="h-auto max-w-sm transition-shadow duration-300 ease-in-out rounded-lg shadow-none md:max-w-md lg:max-w-lg"
+						class="object-contain transition-shadow duration-300 ease-in-out rounded-lg shadow-none"
 						alt="icon_grid"
 					/>
 				</div>
 				<div>
-					<button type="button" class="btn bg-gradient-to-br variant-filled-surface"
-						>Enroll now !!!</button
-					>
+					<button type="button" class="btn btn-xl variant-filled-surface">
+						<Icon icon="icon-park-outline:cooperative-handshake" style="font-size: 35px" />
+						<span><b>Order Now !!!</b></span>
+					</button>
 				</div>
 			</div>
 		</div>
