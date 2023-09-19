@@ -11,7 +11,6 @@
 	import logoKu from '../assets/logoku5x.png';
 	import logoWa from '../assets/wa.png';
 	import Icon from '@iconify/svelte';
-	import { animateScroll } from 'svelte-scrollto-element';
 
 	let click_menu = 'T';
 
@@ -27,31 +26,31 @@
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <AppShell>
 	<svelte:fragment slot="header">
-		<AppBar>
+		<AppBar id="section_head">
 			<svelte:fragment slot="lead"
-				><a href="/"><img src={logoKu} class="h-8 ml-2 hover:cursor-pointer" alt="logo cs" /></a
+				><a href="/"><img src={logoKu} class="h-10 ml-2 hover:cursor-pointer" alt="logo cs" /></a
 				></svelte:fragment
 			>
-			<p class="font-serif text-2xl font-bold hover:cursor-pointer">
+			<p class="font-serif text-3xl font-bold hover:cursor-pointer pt-1">
 				<a href="/">Creative Software</a>
 			</p>
 			<svelte:fragment slot="trail">
 				<div class="hidden md:block">
 					<div class="grid grid-cols-3 gap-2">
 						<div
-							class="hover:text-secondary-400 hover:cursor-pointer ml-10 mt-5 md:mt-3 md:text-lg font_gelaso"
+							class="hover:text-secondary-400 hover:cursor-pointer ml-10 mt-5 md:mt-3 md:text-xl lg:text-2xl font_gelaso"
 						>
-							<a href="/about"> about </a>
+							<p>about</p>
 						</div>
 						<div
-							class="hover:text-secondary-400 hover:cursor-pointer mt-5 ml-5 md:ml-0 md:mt-3 md:text-lg font_gelaso"
+							class="hover:text-secondary-400 hover:cursor-pointer mt-5 ml-6 md:ml-0 md:mt-3 md:text-xl lg:text-2xl font_gelaso"
 						>
 							<p>Pricing</p>
 						</div>
 						<div>
 							<button type="button" class="btn btn-md z-auto md:variant-soft-surface md:mr-1">
 								<span
-									class="hover:text-blue-400 hover:cursor-pointer font-bold hidden md:block md:text-md font_gelaso"
+									class="hover:text-blue-400 hover:cursor-pointer font-bold hidden md:block md:text-md lg:text-lg font_gelaso"
 									>Contact</span
 								>
 								<img src={logoWa} class="h-10 md:h-8 md:ml-2" alt="" />
@@ -93,6 +92,6 @@
 	</svelte:fragment>
 	<slot />
 	<svelte:fragment slot="footer">
-		<a on:click={() => animateScroll.scrollToBottom()}> Scroll to bottom </a>
+		<p>okeee</p>
 	</svelte:fragment>
 </AppShell>
