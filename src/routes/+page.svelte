@@ -5,16 +5,16 @@
 	import imgBg from '$lib/assets/bg2.png';
 </script>
 
-<div class="flex flex-col">
+<div class="flex flex-col gap-5">
 	<div class="h-screen">
 		<Logo imgbg2={imgBg} />
 	</div>
 
-	<div class="h-fit">
+	<div class="h-fit pt-10 md:pt-20">
 		<About />
 	</div>
 
-	<div class="h-fit">
+	<div class="h-fit pt-10 md:pt-20">
 		<Price />
 	</div>
 </div>

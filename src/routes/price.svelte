@@ -4,7 +4,7 @@
 	import Icon from '@iconify/svelte';
 </script>
 
-<div class="container flex flex-col max-w-full lg:gap-12">
+<div class="container flex flex-col max-w-full gap-4 md:gap-8 lg:gap-12">
 	<div class="basis-full">
 		<div class="flex basis-ful h-full justify-center items-center">
 			<div class="text-center">
@@ -19,7 +19,7 @@
 			<div class="container flex flex-row">
 				<div class="basis-full h-full">
 					<div
-						class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 grid-flow-row text-center"
+						class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 grid-flow-row text-center"
 					>
 						{#each $arraycost as itemlist}
 							<div class="card variant-ghost-surface">
@@ -31,7 +31,7 @@
 									<div class="bg-yellow-200 rounded-full" />
 								</header>
 								<section>
-									<div class="grid grid-rows-3">
+									<div class="grid grid-rows-2">
 										{#each $listarraycost as listcost}
 											{#if itemlist.group == listcost.group}
 												<div

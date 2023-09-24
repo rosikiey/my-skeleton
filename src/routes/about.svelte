@@ -3,8 +3,8 @@
 	import Icon from '@iconify/svelte';
 </script>
 
-<div class="container flex flex-col max-w-full lg:gap-12">
-	<div class="basis-full">
+<div class="container flex flex-col max-w-full gap-4 md:gap-8 lg:gap-12">
+	<div class="basis-full bg-green-200">
 		<div class="flex basis-ful h-full justify-center items-center">
 			<div class="text-center">
 				<h1 class=" text-2xl md:text-3xl font-bold leading-7 text-surface-500 font_gelaso">
