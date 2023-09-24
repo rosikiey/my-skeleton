@@ -8,8 +8,8 @@
 
 	import { AppShell } from '@skeletonlabs/skeleton';
 	import { AppBar } from '@skeletonlabs/skeleton';
-	import logoKu from '../assets/logoku5x.png';
-	import logoWa from '../assets/wa.png';
+	import logoKu from '$lib/assets/logoku5x.png';
+	import logoWa from '$lib/assets/wa.png';
 	import Icon from '@iconify/svelte';
 
 	let click_menu = 'T';
@@ -31,19 +31,19 @@
 				><a href="/"><img src={logoKu} class="h-10 ml-2 hover:cursor-pointer" alt="logo cs" /></a
 				></svelte:fragment
 			>
-			<p class="font-serif text-3xl font-bold hover:cursor-pointer pt-1">
+			<p class="font-serif text-2xl font-bold hover:cursor-pointer pt-1">
 				<a href="/">Creative Software</a>
 			</p>
 			<svelte:fragment slot="trail">
 				<div class="hidden md:block">
 					<div class="grid grid-cols-3 gap-2">
 						<div
-							class="hover:text-secondary-400 hover:cursor-pointer ml-10 mt-5 md:mt-3 md:text-xl lg:text-2xl font_gelaso"
+							class="hover:text-secondary-400 hover:cursor-pointer ml-10 mt-5 md:mt-3 md:text-lg lg:text-xl font_gelaso"
 						>
 							<p>about</p>
 						</div>
 						<div
-							class="hover:text-secondary-400 hover:cursor-pointer mt-5 ml-6 md:ml-0 md:mt-3 md:text-xl lg:text-2xl font_gelaso"
+							class="hover:text-secondary-400 hover:cursor-pointer mt-5 ml-6 md:ml-0 md:mt-3 md:text-lg lg:text-xl font_gelaso"
 						>
 							<p>Pricing</p>
 						</div>
@@ -70,23 +70,6 @@
 						</div>
 					</div>
 				</div>
-			</svelte:fragment>
-			<svelte:fragment slot="headline">
-				{#if click_menu == 'Y'}
-					<div class="block md:hidden bg-surface-200">
-						<div class="container grid grid-rows-2 text-right space-y-1">
-							<div class="hover:text-secondary-400 hover:cursor-pointer ml-10 text-xl font_gelaso">
-								<a href="/about"><p>About</p></a>
-							</div>
-							<div class="hover:text-secondary-400 hover:cursor-pointer ml-5 text-xl font_gelaso">
-								<p>Pricing</p>
-							</div>
-							<div class="hover:text-secondary-400 hover:cursor-pointer ml-5 text-xl font_gelaso">
-								<p>Contact Us</p>
-							</div>
-						</div>
-					</div>
-				{/if}
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>

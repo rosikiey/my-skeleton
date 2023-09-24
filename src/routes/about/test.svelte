@@ -132,3 +132,21 @@
 		</div>
 	</section>
 </div>
+
+<svelte:fragment slot="headline">
+	{#if click_menu == 'Y'}
+		<div class="block md:hidden bg-surface-200">
+			<div class="container grid grid-rows-2 text-right space-y-1">
+				<div class="hover:text-secondary-400 hover:cursor-pointer ml-10 text-xl font_gelaso">
+					<a href="/about"><p>About</p></a>
+				</div>
+				<div class="hover:text-secondary-400 hover:cursor-pointer ml-5 text-xl font_gelaso">
+					<p>Pricing</p>
+				</div>
+				<div class="hover:text-secondary-400 hover:cursor-pointer ml-5 text-xl font_gelaso">
+					<p>Contact Us</p>
+				</div>
+			</div>
+		</div>
+	{/if}
+</svelte:fragment>

@@ -2,13 +2,15 @@
 	import imgBg from '$lib/assets/bg2.png';
 	import imgMoto from '$lib/assets/bgg3.png';
 	import Icon from '@iconify/svelte';
+
+	export let imgbg2: any;
 </script>
 
-<div class="container flex flex-row bg-yellow-500 max-w-full h-full">
+<div class="container flex flex-col md:flex-row bg-yellow-500 max-w-full">
 	<div class="basis-1/2 bg-blue-100">
 		<div class="flex md:my-10 md:mx-10">
 			<img
-				src={imgBg}
+				src={imgbg2}
 				class="object-contain ease-in-out rounded-lg shadow-none transition-shadow lg:px-10"
 				alt="icon_nav"
 			/>
