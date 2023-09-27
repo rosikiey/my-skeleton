@@ -6,7 +6,7 @@
 </script>
 
 <div class="flex flex-col gap-5">
-	<div class="h-screen">
+	<div class="h-fit lg:h-screen">
 		<Logo imgbg2={imgBg} />
 	</div>
 

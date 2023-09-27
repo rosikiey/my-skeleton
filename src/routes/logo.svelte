@@ -6,9 +6,9 @@
 	export let imgbg2: any;
 </script>
 
-<div class="container flex flex-col md:flex-row bg-yellow-500 max-w-full">
+<div class="container flex flex-col lg:flex-row max-w-full">
 	<div class="basis-1/2 bg-blue-100">
-		<div class="flex md:my-10 md:mx-10">
+		<div class="flex md:my-10 md:mx-15">
 			<img
 				src={imgbg2}
 				class="object-contain ease-in-out rounded-lg shadow-none transition-shadow lg:px-10"
@@ -16,11 +16,11 @@
 			/>
 		</div>
 	</div>
-	<div class="basis-1/2 bg-surface-50">
-		<div class="container flex flex-col h-full items-center space-y-4 lg:space-y-10">
+	<div class="basis-1/2 lg:bg-surface-100">
+		<div class="container flex flex-col h-fit items-center lg:space-y-0">
 			<div class="md:basis-1/2">
-				<div class="container flex flex-row h-full items-end">
-					<div class="basis-full">
+				<div class="container flex flex-row h-full">
+					<div class="basis-full my-10 mx-14 pl-10 lg:mx-20 lg:my-16">
 						<img
 							src={imgMoto}
 							class="object-contain transition-shadow duration-300 ease-in-out rounded-lg shadow-none"
@@ -31,7 +31,7 @@
 			</div>
 			<div class="md:basis-1/2">
 				<div>
-					<button type="button" class="btn btn-sm md:btn-md lg:btn-xl variant-filled-surface">
+					<button type="button" class="btn btn-sm md:btn-lg lg:btn-xl variant-filled-surface">
 						<Icon icon="icon-park-outline:cooperative-handshake" style="font-size: 25px" />
 						<span><b>Price List !</b></span>
 					</button>
