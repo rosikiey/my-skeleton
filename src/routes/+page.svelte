@@ -10,7 +10,7 @@
 		<Logo imgbg2={imgBg} />
 	</div>
 
-	<div class="h-fit pt-10 md:pt-20">
+	<div class="h-fit pt-10 md:pt-10">
 		<About />
 	</div>
 
