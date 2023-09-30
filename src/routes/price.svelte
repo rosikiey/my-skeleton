@@ -4,11 +4,11 @@
 	import Icon from '@iconify/svelte';
 </script>
 
-<div class="container flex flex-col max-w-full gap-4 md:gap-8 lg:gap-12">
+<div class="container flex flex-col max-w-full gap-4 md:gap-8 lg:gap-12 bscroll" id="pricing">
 	<div class="basis-full">
 		<div class="flex basis-ful h-full justify-center items-center">
 			<div class="text-center">
-				<h1 class=" text-2xl md:text-3xl font-bold leading-7 text-surface-500 font_gelaso">
+				<h1 class=" text-2xl md:text-3xl font-bold leading-7 text-zinc-200 font_gelaso">
 					Daftar harga pengerjaan Software
 				</h1>
 			</div>
@@ -22,10 +22,10 @@
 						class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 grid-flow-row text-center"
 					>
 						{#each $arraycost as itemlist}
-							<div class="card variant-ghost-surface">
+							<div class="card variant-soft-surface">
 								<header class="card-header">
 									<slot name="theader" />
-									<button type="button" class="btn-icon btn-icon-xl variant-soft-surface"
+									<button type="button" class="btn-icon btn-icon-xl variant-soft-tertiary"
 										><Icon icon={itemlist.icon} style="font-size: 35px" /></button
 									>
 									<div class="bg-yellow-200 rounded-full" />
@@ -43,24 +43,24 @@
 														{:else}
 															<Icon
 																icon={listcost.iconlist}
-																style="font-size: 45px;color: #f54e42;"
+																style="font-size: 45px;color: #14B8A6;"
 															/>
 														{/if}
 													</div>
 													<div class=" basis-5/6 lg:basis-4/5 text-left">
 														<div class="flex flex-col">
 															{#if listcost.highlight == 't'}
-																<div class="text-xl font-bold font_gelaso text-surface-600 pb-1">
+																<div class="text-xl font-bold font_gelaso text-zinc-200 pb-1">
 																	<b>{listcost.headlist}</b>
 																</div>
-																<div class="text-lg font_gelaso leading-6 text-surface-500">
+																<div class="text-lg font_gelaso leading-6 text-zinc-300">
 																	{listcost.titlelist}
 																</div>
 															{:else}
-																<div class="text-xl font-bold font_gelaso text-orange-500 pb-1">
+																<div class="text-xl font-bold font_gelaso text-tertiary-400 pb-1">
 																	<b>{listcost.headlist}</b>
 																</div>
-																<div class="text-lg font_gelaso leading-6 text-orange-500">
+																<div class="text-lg font_gelaso leading-6 text-tertiary-400">
 																	{listcost.titlelist}
 																</div>
 															{/if}
@@ -72,7 +72,7 @@
 									</div>
 								</section>
 								<footer class="card-footer">
-									<h2 class="text-3xl leading-tight font_bebas_neu text-orange-500 pt-2">
+									<h2 class="text-3xl leading-tight font_bebas_neu text-tertiary-500 pt-2">
 										<b>{itemlist.price}</b>
 									</h2>
 								</footer>
@@ -84,3 +84,9 @@
 		</div>
 	</div>
 </div>
+
+<style>
+	.bscroll {
+		scroll-margin: 20px;
+	}
+</style>
