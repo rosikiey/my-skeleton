@@ -4,12 +4,22 @@
 	import Icon from '@iconify/svelte';
 
 	export let imgbg2: any;
+
+	function to_element_pricing() {
+		document.getElementById('pricing')?.scrollIntoView({
+			block: 'start',
+			behavior: 'smooth'
+		});
+	}
 </script>
 
-<div class="container flex flex-col h-fit lg:flex-row max-w-full lg:h-full" id="home">
+<div
+	class="container flex flex-col h-fit lg:flex-row max-w-full lg:h-full bg-gradient-to-r from-blue-750 to-bsdark"
+	id="home"
+>
 	<div class="basis-1/2">
 		<div class="flex items-center content-center justify-center md:my-10 md:mx-15">
-			<figure class=" max-w-md md:max-w-xl lg:max-w-2xl">
+			<figure class=" max-w-md md:max-w-xl lg:max-w-3xl">
 				<img
 					src={imgbg2}
 					class="object-contain ease-in-out rounded-lg shadow-none transition-shadow lg:px-10"
@@ -42,8 +52,9 @@
 			<div class="md:basis-1/2">
 				<div class="pt-2">
 					<button
+						on:click={to_element_pricing}
 						type="button"
-						class="btn btn-sm md:btn-lg lg:btn-lg bg-gradient-to-br variant-gradient-primary-tertiary"
+						class="btn btn-sm md:btn-lg lg:btn-lg variant-soft-tertiary"
 					>
 						<Icon icon="icon-park-outline:cooperative-handshake" style="font-size: 30px" />
 						<span><b>Price List</b></span>

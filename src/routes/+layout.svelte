@@ -43,8 +43,6 @@
 			behavior: 'smooth'
 		});
 	}
-
-	import { animateScroll } from 'svelte-scrollto-element';
 </script>
 
 <!-- svelte-ignore a11y-click-events-have-key-events -->
@@ -52,7 +50,8 @@
 	<svelte:fragment slot="header">
 		<AppBar id="section_head">
 			<svelte:fragment slot="lead"
-				><a href="/"><img src={logoKu} class="h-10 ml-2 hover:cursor-pointer" alt="logo cs" /></a
+				><a on:click={to_element_home}
+					><img src={logoKu} class="h-10 ml-2 hover:cursor-pointer" alt="logo cs" /></a
 				></svelte:fragment
 			>
 			<p class="font-serif text-2xl font-bold hover:cursor-pointer pt-1">
@@ -72,13 +71,18 @@
 							<p on:click={to_element_pricing}>Pricing</p>
 						</div>
 						<div>
-							<button type="button" class="btn btn-md z-auto md:variant-soft-tertiary md:mr-1">
+							<a
+								href="https://wa.me/6281917310390?text=hallo%2C%20apa%20bisa%20mengerjakan%20software%20sesuai%20dengan%20kebutuhan%20saya%3F"
+								target="_blank"
+								type="button"
+								class="btn btn-md z-auto md:variant-soft-tertiary md:mr-1"
+							>
 								<span
 									class="hover:text-blue-400 hover:cursor-pointer font-bold hidden md:block md:text-md lg:text-lg font_gelaso"
 									>Contact</span
 								>
 								<img src={logoWa} class="h-10 md:h-8 md:ml-2" alt="" />
-							</button>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -99,6 +103,8 @@
 	</svelte:fragment>
 	<slot />
 	<svelte:fragment slot="footer">
-		<p>okeee</p>
+		<div class="text-center text-sm lg:text-base bg-lime-300 text-rose-500">
+			<p>Sofware berbasis Web, Android, Iphone, Desktop</p>
+		</div>
 	</svelte:fragment>
 </AppShell>
