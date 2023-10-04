@@ -39,28 +39,31 @@
 												>
 													<div class=" basis-1/6 pl-6 lg:pl-10 md:pl-2 md:basis-1/5">
 														{#if listcost.highlight == 't'}
-															<Icon icon={listcost.iconlist} style="font-size: 35px" />
+															<Icon
+																icon={listcost.iconlist}
+																style="font-size: 35px;color: #FA5431"
+															/>
 														{:else}
 															<Icon
 																icon={listcost.iconlist}
-																style="font-size: 45px;color: #FE380E ;"
+																style="font-size: 45px;color: #FA5431 ;"
 															/>
 														{/if}
 													</div>
 													<div class=" basis-5/6 lg:basis-4/5 text-left">
 														<div class="flex flex-col">
 															{#if listcost.highlight == 't'}
-																<div class="text-xl font-bold font_gelaso text-black pb-1">
+																<div class="text-xl font-bold font_gelaso text-error-600 pb-1">
 																	<b>{listcost.headlist}</b>
 																</div>
-																<div class="text-lg font_gelaso leading-6 text-black ß">
+																<div class="text-lg font_gelaso leading-6 text-black">
 																	{listcost.titlelist}
 																</div>
 															{:else}
-																<div class="text-xl font-bold font_gelaso text-error-500 pb-1">
+																<div class="text-xl font-bold font_gelaso text-error-600 pb-1">
 																	<b>{listcost.headlist}</b>
 																</div>
-																<div class="text-lg font_gelaso leading-6 text-error-500">
+																<div class="text-lg font_gelaso leading-6 text-black">
 																	{listcost.titlelist}
 																</div>
 															{/if}
