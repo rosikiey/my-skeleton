@@ -61,12 +61,12 @@
 				<div class="hidden md:block">
 					<div class="grid grid-cols-3 gap-2">
 						<div
-							class="hover:text-secondary-400 hover:cursor-pointer ml-10 mt-5 md:mt-3 md:text-lg lg:text-xl font_gelaso"
+							class="hover:text-error-500 hover:cursor-pointer ml-10 mt-5 md:mt-3 md:text-lg lg:text-xl font_gelaso"
 						>
 							<p on:click={to_element_about}>About</p>
 						</div>
 						<div
-							class="hover:text-secondary-400 hover:cursor-pointer mt-5 ml-6 md:ml-0 md:mt-3 md:text-lg lg:text-xl font_gelaso"
+							class="hover:text-error-500 hover:cursor-pointer mt-5 ml-6 md:ml-0 md:mt-3 md:text-lg lg:text-xl font_gelaso"
 						>
 							<p on:click={to_element_pricing}>Pricing</p>
 						</div>
@@ -78,7 +78,7 @@
 								class="btn btn-md z-auto md:variant-soft-tertiary md:mr-1"
 							>
 								<span
-									class="hover:text-blue-400 hover:cursor-pointer font-bold hidden md:block md:text-md lg:text-lg font_gelaso"
+									class="hover:text-error-500 hover:cursor-pointer font-bold hidden md:block md:text-md lg:text-lg font_gelaso"
 									>Contact</span
 								>
 								<img src={logoWa} class="h-10 md:h-8 md:ml-2" alt="" />

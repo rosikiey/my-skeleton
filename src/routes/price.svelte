@@ -22,10 +22,10 @@
 						class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 grid-flow-row text-center"
 					>
 						{#each $arraycost as itemlist}
-							<div class="card variant-soft-surface">
+							<div class="card variant-filled-success">
 								<header class="card-header">
 									<slot name="theader" />
-									<button type="button" class="btn-icon btn-icon-xl variant-soft-tertiary"
+									<button type="button" class="btn-icon btn-icon-xl variant-filled-error"
 										><Icon icon={itemlist.icon} style="font-size: 35px" /></button
 									>
 									<div class="bg-yellow-200 rounded-full" />
@@ -43,24 +43,24 @@
 														{:else}
 															<Icon
 																icon={listcost.iconlist}
-																style="font-size: 45px;color: #14B8A6;"
+																style="font-size: 45px;color: #FE380E ;"
 															/>
 														{/if}
 													</div>
 													<div class=" basis-5/6 lg:basis-4/5 text-left">
 														<div class="flex flex-col">
 															{#if listcost.highlight == 't'}
-																<div class="text-xl font-bold font_gelaso text-zinc-200 pb-1">
+																<div class="text-xl font-bold font_gelaso text-black pb-1">
 																	<b>{listcost.headlist}</b>
 																</div>
-																<div class="text-lg font_gelaso leading-6 text-zinc-300">
+																<div class="text-lg font_gelaso leading-6 text-black ß">
 																	{listcost.titlelist}
 																</div>
 															{:else}
-																<div class="text-xl font-bold font_gelaso text-tertiary-400 pb-1">
+																<div class="text-xl font-bold font_gelaso text-error-500 pb-1">
 																	<b>{listcost.headlist}</b>
 																</div>
-																<div class="text-lg font_gelaso leading-6 text-tertiary-400">
+																<div class="text-lg font_gelaso leading-6 text-error-500">
 																	{listcost.titlelist}
 																</div>
 															{/if}
@@ -72,7 +72,7 @@
 									</div>
 								</section>
 								<footer class="card-footer">
-									<h2 class="text-3xl leading-tight font_bebas_neu text-tertiary-500 pt-2">
+									<h2 class="text-3xl leading-tight font_bebas_neu text-error-500 pt-2">
 										<b>{itemlist.price}</b>
 									</h2>
 								</footer>

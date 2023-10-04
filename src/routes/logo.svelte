@@ -37,7 +37,7 @@
 					</div>
 					<div class="flex items-center content-center justify-center my-3 md:my-4 md:mx-15">
 						<p class="text-[48px] font-serif">Pembuatan</p>
-						<p class="text-[48px] font-serif pl-3 text-tertiary-400">Software</p>
+						<p class="text-[48px] font-serif pl-3 text-success-500"><b>Software</b></p>
 					</div>
 					<div class="flex items-center content-center justify-center my-3 md:my-4 md:mx-15">
 						<p class="text-[48px] font-serif">Perusahaan Anda</p>
@@ -54,7 +54,7 @@
 					<button
 						on:click={to_element_pricing}
 						type="button"
-						class="btn btn-sm md:btn-lg lg:btn-lg variant-soft-tertiary"
+						class="btn btn-sm md:btn-lg lg:btn-lg variant-filled-error"
 					>
 						<Icon icon="icon-park-outline:cooperative-handshake" style="font-size: 30px" />
 						<span><b>Price List</b></span>
