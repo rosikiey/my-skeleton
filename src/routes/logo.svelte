@@ -1,8 +1,5 @@
 <script lang="ts">
-	import imgBg from '$lib/assets/bg2.png';
-	import imgMoto from '$lib/assets/bgg3.png';
 	import Icon from '@iconify/svelte';
-
 	export let imgbg2: any;
 
 	function to_element_pricing() {
@@ -14,7 +11,7 @@
 </script>
 
 <div
-	class="container flex flex-col h-fit lg:flex-row max-w-full lg:h-full bg-gradient-to-r from-blue-750 to-bsdark"
+	class="static container flex flex-col h-fit lg:flex-row max-w-full lg:h-full bg-gradient-to-r from-blue-750 to-bsdark"
 	id="home"
 >
 	<div class="basis-1/2">
@@ -33,19 +30,21 @@
 			<div class="md:basis-1/2">
 				<div class="flex flex-col h-full pt-10 lg:pt-40">
 					<div class="flex items-center content-center justify-center my-3 md:my-4 md:mx-15">
-						<p class="text-[48px] font-serif">Mitra terbaik</p>
+						<p class="text-[42px] md:text-[48px] font-serif">Mitra terbaik</p>
 					</div>
 					<div class="flex items-center content-center justify-center my-3 md:my-4 md:mx-15">
-						<p class="text-[48px] font-serif">Pembuatan</p>
-						<p class="text-[48px] font-serif pl-3 text-success-500"><b>Software</b></p>
+						<p class="text-[42px] md:text-[48px] font-serif">Pembuatan</p>
+						<p class="text-[42px] md:text-[48px] font-serif pl-3 text-success-500">
+							<b>Software</b>
+						</p>
 					</div>
 					<div class="flex items-center content-center justify-center my-3 md:my-4 md:mx-15">
-						<p class="text-[48px] font-serif">Perusahaan Anda</p>
+						<p class="text-[42px] md:text-[48px] font-serif">Perusahaan Anda</p>
 					</div>
 					<div
 						class="flex items-center content-center justify-center my-3 md:my-4 md:mx-15 text-tertiary-300"
 					>
-						<p class="text-[23px] font-mono">trusted & Reliable</p>
+						<p class="text-[20px] md:text-[23px] font-mono">trusted & Reliable</p>
 					</div>
 				</div>
 			</div>

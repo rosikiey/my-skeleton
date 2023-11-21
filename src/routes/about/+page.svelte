@@ -1,6 +1,5 @@
 <script lang="ts">
 	import imgBg from '$lib/assets/bg2.png';
-	import imgMoto from '$lib/assets/bgg3.png';
 	import Icon from '@iconify/svelte';
 </script>
 
@@ -20,7 +19,7 @@
 				<div class="container flex flex-row h-full items-end">
 					<div class="basis-full">
 						<img
-							src={imgMoto}
+							src={imgBg}
 							class="object-contain transition-shadow duration-300 ease-in-out rounded-lg shadow-none"
 							alt="icon_grid"
 						/>

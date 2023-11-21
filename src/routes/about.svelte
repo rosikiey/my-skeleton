@@ -34,7 +34,7 @@
 									</h2>
 								</section>
 								<footer class="card-footer">
-									<h2 class="text-lg leading-tight font_gelaso text-black">
+									<h2 class="text-lg leading-tight font_gelaso text-gray-700">
 										{item.titleFooter}
 									</h2>
 								</footer>

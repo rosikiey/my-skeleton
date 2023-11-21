@@ -1,5 +1,9 @@
 import { writable } from "svelte/store";
 
+export const statusclick = writable({
+    tampilmenu: 'T'
+});
+
 export const arraytitle = writable(
     [
         {
@@ -171,3 +175,85 @@ export const listarraycost = writable(
         }
     ]
 )
+
+export const arraycost2 = writable(
+    [
+        {
+            price: "7",
+            iconlist: "octicon:person-24",
+            headlist: "HRIS",
+            titlelist: "Software yang bertujuan memberikan informasi dan untuk manajemen sumber daya manusia",
+            classCard: "card variant- filled - success"
+        },
+        {
+            price: "15",
+            iconlist: "vaadin:calc-book",
+            headlist: "SOFTWARE AKUNTANSI",
+            titlelist: "Software lengkap untuk mendukung kegiatan Akutansi yang berbasis modularitas",
+            classCard: "card variant- filled - success"
+        },
+        {
+            price: "7",
+            iconlist: "ri:building-line",
+            headlist: "MANAJEMEN ASSET",
+            titlelist: "Software menajemen asset mulai dari pengadaan sampai dengan pemusnahaan",
+            classCard: "card variant- filled - success"
+        },
+        {
+            price: "5",
+            iconlist: "mdi:network-point-of-sale",
+            headlist: "POINT OF SALE",
+            titlelist: "Software yang bertujuan memberikan informasi dan untuk manajemen sumber daya manusia",
+            classCard: "card variant- filled - success"
+        },
+        {
+            price: "10",
+            iconlist: "clarity:factory-line",
+            headlist: "SOFTWARE MANUFAKTUR",
+            titlelist: "Software untuk menunjang proses produksi barang agar berjalan dengan baik",
+            classCard: "card variant- filled - success"
+        }
+        ,
+        {
+            price: "1",
+            iconlist: "material-symbols:inbox-customize-outline-rounded",
+            headlist: "CUSTOM SOFTWARE",
+            titlelist: "Software yang di buat khusus untuk solusi dari permasalahan binis anda",
+            classCard: "card variant- filled - success"
+        }
+    ]
+)
+
+/*
+
+{
+            price: "7",
+            iconlist: "carbon:chart-relationship",
+            headlist: "CRM",
+            titlelist: "Software untuk mengelola data riwayat pelanggan, mulai dari prospek hingga transaksi pelanggan ",
+            classCard: "card variant- filled - success"
+        },
+        {
+            price: "3",
+            iconlist: "bi:box",
+            headlist: "MANAJEMEN STOK",
+            titlelist: "Software untuk mengelola semua aspek persediaan barang, mulai dari penerimaan s/d pengiriman",
+            classCard: "card variant- filled - success"
+        },
+        {
+            price: "1",
+            iconlist: "icon-park-outline:web-page",
+            headlist: "LANDING PAGE",
+            titlelist: "Website yang di desain khusus dengan mindset marketing untuk pemasaran / pengenalan produk",
+            classCard: "card variant- filled - success"
+        }
+        ,
+        {
+            price: "1",
+            iconlist: "material-symbols:inbox-customize-outline-rounded",
+            headlist: "CUSTOM SOFTWARE",
+            titlelist: "Software yang di buat khusus untuk solusi dari permasalahan binis anda",
+            classCard: "card variant- filled - success"
+        }
+
+*/

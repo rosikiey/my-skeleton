@@ -1,6 +1,5 @@
 <script lang="ts">
-	import { arraycost } from '../store.js';
-	import { listarraycost } from '../store.js';
+	import { arraycost2 } from '../store.js';
 	import Icon from '@iconify/svelte';
 </script>
 
@@ -19,66 +18,33 @@
 			<div class="container flex flex-row">
 				<div class="basis-full h-full">
 					<div
-						class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 grid-flow-row text-center"
+						class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 grid-flow-row text-center"
 					>
-						{#each $arraycost as itemlist}
+						{#each $arraycost2 as itemlist}
 							<div class="card variant-filled-success">
 								<header class="card-header">
-									<slot name="theader" />
-									<button type="button" class="btn-icon btn-icon-xl variant-filled-error"
-										><Icon icon={itemlist.icon} style="font-size: 35px" /></button
-									>
-									<div class="bg-yellow-200 rounded-full" />
+									<div id="title" class="w-full border-b border-gray-800">
+										<h2 class="font-bold font_gelaso text-2xl text-black">
+											{itemlist?.headlist}
+										</h2>
+										<h3 class="font-normal font_serif text-error-600 text-xl mt-2">
+											{itemlist?.price} <sup> juta</sup>
+										</h3>
+									</div>
 								</header>
 								<section>
-									<div class="grid grid-rows-2">
-										{#each $listarraycost as listcost}
-											{#if itemlist.group == listcost.group}
-												<div
-													class=" flex flex-row items-center justify-center pt-2 md:pt-4 h-24 lg:h-32 md:h-32"
-												>
-													<div class=" basis-1/6 pl-6 lg:pl-10 md:pl-2 md:basis-1/5">
-														{#if listcost.highlight == 't'}
-															<Icon
-																icon={listcost.iconlist}
-																style="font-size: 35px;color: #FA5431"
-															/>
-														{:else}
-															<Icon
-																icon={listcost.iconlist}
-																style="font-size: 45px;color: #FA5431 ;"
-															/>
-														{/if}
-													</div>
-													<div class=" basis-5/6 lg:basis-4/5 text-left">
-														<div class="flex flex-col">
-															{#if listcost.highlight == 't'}
-																<div class="text-xl font-bold font_gelaso text-error-600 pb-1">
-																	<b>{listcost.headlist}</b>
-																</div>
-																<div class="text-lg font_gelaso leading-6 text-black">
-																	{listcost.titlelist}
-																</div>
-															{:else}
-																<div class="text-xl font-bold font_gelaso text-error-600 pb-1">
-																	<b>{listcost.headlist}</b>
-																</div>
-																<div class="text-lg font_gelaso leading-6 text-black">
-																	{listcost.titlelist}
-																</div>
-															{/if}
-														</div>
-													</div>
-												</div>
-											{/if}
-										{/each}
+									<div class="flex flex-col my-2 items-center justify-center">
+										<div id="icon" class="basis-full">
+											<button type="button" class="btn-icon btn-icon-xl variant-ringed-success">
+												<Icon icon={itemlist?.iconlist} style="font-size: 35px;" />
+											</button>
+										</div>
+										<div id="icon" class="basis-full font_bebas_neu text-xl text-gray-700">
+											<p>{itemlist?.titlelist}</p>
+										</div>
 									</div>
 								</section>
-								<footer class="card-footer">
-									<h2 class="text-3xl leading-tight font_bebas_neu text-error-500 pt-2">
-										<b>{itemlist.price}</b>
-									</h2>
-								</footer>
+								<footer class="card-footer" />
 							</div>
 						{/each}
 					</div>

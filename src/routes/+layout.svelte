@@ -11,14 +11,16 @@
 	import logoKu from '$lib/assets/logoku5x.png';
 	import logoWa from '$lib/assets/wa.png';
 	import Icon from '@iconify/svelte';
+	import Index from './index.svelte';
+	import { statusclick } from '../store.js';
 
 	let click_menu = 'T';
 
 	function change_show() {
-		if (click_menu == 'Y') {
-			click_menu = 'T';
+		if ($statusclick.tampilmenu == 'Y') {
+			statusclick.set({ tampilmenu: 'T' });
 		} else {
-			click_menu = 'Y';
+			statusclick.set({ tampilmenu: 'Y' });
 		}
 	}
 
@@ -89,22 +91,33 @@
 				<div class="block md:hidden">
 					<div class="grid grid-cols-1 gap-2">
 						<div>
-							<button
-								type="button"
-								on:click={change_show}
-								class="btn-icon btn-icon-sm variant-ringed-tertiary"
-								><Icon icon="ph:list-light" style="font-size: 25px" /></button
-							>
+							{#if $statusclick.tampilmenu == 'T'}
+								<button
+									type="button"
+									on:click={change_show}
+									class="btn-icon btn-icon-sm variant-ringed-tertiary"
+									><Icon icon="ph:list-light" style="font-size: 25px" /></button
+								>
+							{:else}
+								<button
+									type="button"
+									on:click={change_show}
+									class="btn-icon btn-icon-sm variant-filled-warning"
+									><Icon icon="fluent-mdl2:cancel" style="font-size: 25px" /></button
+								>
+							{/if}
 						</div>
 					</div>
 				</div>
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
-	<slot />
+	<Index />
 	<svelte:fragment slot="footer">
-		<div class="text-center text-sm lg:text-base bg-lime-300 text-rose-500">
-			<p>Sofware berbasis Web, Android, Iphone, Desktop</p>
+		<div
+			class="text-left text-xs pl-2 bg-gradient-to-r from-success-400 to-blue-500 text-gray-600 hidden md:block"
+		>
+			<p>Copyright &copy; 2023 - 2023 Creative Software</p>
 		</div>
 	</svelte:fragment>
 </AppShell>
