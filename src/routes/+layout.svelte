@@ -57,7 +57,7 @@
 				></svelte:fragment
 			>
 			<p class="font-serif text-2xl font-bold hover:cursor-pointer pt-1">
-				<a on:click={to_element_home}>Creative Software</a>
+				<a on:click={to_element_home}>Creative Softwarex</a>
 			</p>
 			<svelte:fragment slot="trail">
 				<div class="hidden md:block">
