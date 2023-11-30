@@ -30,16 +30,16 @@
 			<div class="md:basis-1/2">
 				<div class="flex flex-col h-full pt-10 lg:pt-40">
 					<div class="flex items-center content-center justify-center my-3 md:my-4 md:mx-15">
-						<p class="text-[42px] md:text-[48px] font-serif">Mitra terbaik</p>
+						<p class="text-[38px] md:text-[48px] font-serif">Mitra terbaik</p>
 					</div>
 					<div class="flex items-center content-center justify-center my-3 md:my-4 md:mx-15">
-						<p class="text-[42px] md:text-[48px] font-serif">Pembuatan</p>
-						<p class="text-[42px] md:text-[48px] font-serif pl-3 text-success-500">
+						<p class="text-[38px] md:text-[48px] font-serif">Pembuatan</p>
+						<p class="text-[38px] md:text-[48px] font-serif pl-3 text-success-500">
 							<b>Software</b>
 						</p>
 					</div>
 					<div class="flex items-center content-center justify-center my-3 md:my-4 md:mx-15">
-						<p class="text-[42px] md:text-[48px] font-serif">Perusahaan Anda</p>
+						<p class="text-[38px] md:text-[48px] font-serif">Perusahaan Anda</p>
 					</div>
 					<div
 						class="flex items-center content-center justify-center my-3 md:my-4 md:mx-15 text-tertiary-300"
