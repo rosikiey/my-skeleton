@@ -30,4 +30,4 @@ jobs:
                   context: .
                   file: ./Dockerfile
                   push: true
-                  tags: $/csoftware:latest
+                  tags: rosykiey48/csoftware:latest
