@@ -186,14 +186,14 @@ export const arraycost2 = writable(
             classCard: "card variant- filled - success"
         },
         {
-            price: "15",
+            price: "13",
             iconlist: "vaadin:calc-book",
             headlist: "SOFTWARE AKUNTANSI",
             titlelist: "Software lengkap untuk mendukung kegiatan Akutansi yang berbasis modularitas",
             classCard: "card variant- filled - success"
         },
         {
-            price: "7",
+            price: "5",
             iconlist: "ri:building-line",
             headlist: "MANAJEMEN ASSET",
             titlelist: "Software menajemen asset mulai dari pengadaan sampai dengan pemusnahaan",

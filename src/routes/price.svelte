@@ -28,7 +28,7 @@
 											{itemlist?.headlist}
 										</h2>
 										<h3 class="font-normal font_serif text-error-600 text-xl mt-2">
-											{itemlist?.price} <sup> juta</sup>
+											{itemlist?.price} <sup> juta +</sup>
 										</h3>
 									</div>
 								</header>
