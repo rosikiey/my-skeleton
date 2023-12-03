@@ -45,4 +45,4 @@ jobs:
                     key: ${{secrets.SSH_PRIVATEKEY_BIZNETGIO}}
                     port: 22
                     script: |
-                        docker stop testname;docker rm testname;docker pull rosykiey48/csoftware:latest;docker run -d --name testname -p 8081:8080 rosykiey48/csoftware:latest
+                        docker stop testname;docker rm testname;docker pull rosykiey48/csoftware:latest;docker run -d --name testname -p 8081:8080 rosykiey48/csoftware:latest;docker rmi $(docker images --filter dangling=true -q --no-trunc);[ -n "$(docker ps --filter "status=exited" --filter "status=dead" -q)" ]&& docker rm $(docker ps --filter "status=exited" --filter "status=dead" -q);[ -n "$(docker images -q --filter dangling=true -q --no-trunc)" ]&& docker rmi $(docker images --filter dangling=true -q --no-trunc)
