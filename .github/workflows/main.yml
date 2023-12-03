@@ -23,7 +23,7 @@ jobs:
                 name: Set up Docker Buildx
                 uses: docker/setup-buildx-action@v2
             - # build the container image and push it to Docker \
-                # Hub with the name clockbox.
+                # Hub with the name rosykiey48.
                 name: Build and push
                 uses: docker/build-push-action@v4
                 with:
@@ -31,3 +31,18 @@ jobs:
                   file: ./Dockerfile
                   push: true
                   tags: rosykiey48/csoftware:latest
+    deploy:
+        runs-on: ubuntu-latest
+        name: Continuous Deployment
+        needs: [build]
+        steps:
+            - # deploy into vps menggunakan ssh private key yang di dapat dari server
+                name: Deploy using ssh
+                uses: appleboy/ssh-action@master
+                with:
+                    host: ${{ secrets.SSH_HOST_BIZNETGIO }}
+                    username: ${{ secrets.SSH_USERNAME_BIZNETGIO }}
+                    key: ${{secrets.SSH_PRIVATEKEY_BIZNETGIO}}
+                    port: 22
+                    script: |
+                        docker stop testname;docker rm testname;docker pull rosykiey48/csoftware:latest;docker run -d --name testname -p 8081:8080 rosykiey48/csoftware:latest
