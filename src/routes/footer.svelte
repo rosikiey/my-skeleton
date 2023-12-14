@@ -13,7 +13,7 @@
 			</div>
 			<div class="basis-full text-center pt-4">
 				<h3 class="text-lg md:text-lg font-bold leading-7 text-gray-400 font_gelaso">
-					Creative Software di rancang untuk memudahkan proses bisnis anda dimanapun dan kapanpun.
+					Aplikasi Pro di rancang untuk memudahkan proses bisnis anda dimanapun dan kapanpun.
 				</h3>
 			</div>
 			<div class="basis-full text-center">

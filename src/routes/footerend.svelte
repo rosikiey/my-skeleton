@@ -42,7 +42,7 @@
 							</button>
 						</div>
 						<div class="basis-full">
-							<p>creative.software.id@gmail.com</p>
+							<p>aplikasi.pro.id@gmail.com</p>
 						</div>
 					</div>
 				</div>

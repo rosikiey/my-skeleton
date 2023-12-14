@@ -8,7 +8,7 @@
 
 	import { AppShell } from '@skeletonlabs/skeleton';
 	import { AppBar } from '@skeletonlabs/skeleton';
-	import logoKu from '$lib/assets/logoku5x.png';
+	import logoKu from '$lib/assets/logoku51.png';
 	import logoWa from '$lib/assets/wa.png';
 	import Icon from '@iconify/svelte';
 	import Index from './index.svelte';
@@ -47,17 +47,33 @@
 	}
 </script>
 
-<!-- svelte-ignore a11y-click-events-have-key-events -->
+<svelte:head>
+	<title>Aplikasi Pro | Software House</title>
+	<meta
+		name="description"
+		content="Jasa pembuatan aplikasi perusahaan berbasis web, android, ios"
+	/>
+	<script type="application/ld+json">
+		{
+		"@context": "http://schema.org",
+		"@type": "WebSite",
+		"name": "Aplikasi Pro",
+		"description": "jasa pembuatan aplikasi web android ios"
+		"url": "https://aplikasipro.id",
+		}
+	</script>
+</svelte:head>
+
 <AppShell>
 	<svelte:fragment slot="header">
 		<AppBar id="section_head">
 			<svelte:fragment slot="lead"
 				><a on:click={to_element_home}
-					><img src={logoKu} class="h-10 ml-2 hover:cursor-pointer" alt="logo cs" /></a
+					><img src={logoKu} class="h-12 ml-2 hover:cursor-pointer" alt="logo cs" /></a
 				></svelte:fragment
 			>
 			<p class="font-serif text-2xl font-bold hover:cursor-pointer pt-1">
-				<a on:click={to_element_home}>Creative Software</a>
+				<a on:click={to_element_home}>Aplikasi Pro</a>
 			</p>
 			<svelte:fragment slot="trail">
 				<div class="hidden md:block">
