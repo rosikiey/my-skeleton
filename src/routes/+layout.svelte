@@ -48,7 +48,7 @@
 </script>
 
 <svelte:head>
-	<title>Aplikasi Pro | Software House</title>
+	<title>Software Erp</title>
 	<meta
 		name="description"
 		content="Jasa pembuatan aplikasi perusahaan berbasis web, android, ios"
@@ -72,9 +72,6 @@
 					><img src={logoKu} class="h-12 ml-2 hover:cursor-pointer" alt="logo cs" /></a
 				></svelte:fragment
 			>
-			<p class="font-serif text-2xl font-bold hover:cursor-pointer pt-1">
-				<a on:click={to_element_home}>Aplikasi Pro</a>
-			</p>
 			<svelte:fragment slot="trail">
 				<div class="hidden md:block">
 					<div class="grid grid-cols-3 gap-2">
@@ -133,7 +130,7 @@
 		<div
 			class="text-left text-xs pl-2 bg-gradient-to-r from-success-400 to-blue-500 text-gray-600 hidden md:block"
 		>
-			<p>Copyright &copy; 2023 - 2023 Creative Software</p>
+			<p>Copyright &copy; 2023 - 2024 Ellipsis Software Development</p>
 		</div>
 	</svelte:fragment>
 </AppShell>

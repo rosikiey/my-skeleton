@@ -30,13 +30,15 @@
 			<div class="md:basis-1/2">
 				<div class="flex flex-col h-full pt-10 lg:pt-40">
 					<div class="flex items-center content-center justify-center my-3 md:my-4 md:mx-15">
-						<p class="text-[36px] md:text-[48px] font-serif">Mitra terbaik</p>
-					</div>
-					<div class="flex items-center content-center justify-center my-3 md:my-4 md:mx-15">
-						<p class="text-[36px] md:text-[48px] font-serif">Pembuatan</p>
 						<p class="text-[36px] md:text-[48px] font-serif pl-3 text-success-500">
 							<b>Software</b>
 						</p>
+						<p class="text-[36px] md:text-[48px] font-serif pl-3 text-success-500">
+							<b>ERP</b>
+						</p>
+					</div>
+					<div class="flex items-center content-center justify-center my-3 md:my-4 md:mx-15">
+						<p class="text-[36px] md:text-[48px] font-serif">Untuk Kemajuan</p>
 					</div>
 					<div class="flex items-center content-center justify-center my-3 md:my-4 md:mx-15">
 						<p class="text-[36px] md:text-[48px] font-serif">Perusahaan Anda</p>
@@ -44,7 +46,7 @@
 					<div
 						class="flex items-center content-center justify-center my-3 md:my-4 md:mx-15 text-tertiary-300"
 					>
-						<p class="text-[20px] md:text-[23px] font-mono">trusted & Reliable</p>
+						<p class="text-[20px] md:text-[23px] font-mono">moving forward</p>
 					</div>
 				</div>
 			</div>
