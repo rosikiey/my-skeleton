@@ -42,7 +42,7 @@
 							</button>
 						</div>
 						<div class="basis-full">
-							<p>aplikasi.pro.id@gmail.com</p>
+							<p>brackets.erp@gmail.com</p>
 						</div>
 					</div>
 				</div>

@@ -2,6 +2,7 @@
 	import Logo from './logo.svelte';
 	import About from './about.svelte';
 	import Price from './price.svelte';
+	import Price2 from './price2.svelte';
 	import Footer from './footer.svelte';
 	import Footerend from './footerend.svelte';
 	import imgBg from '$lib/assets/bg2.png';
@@ -48,6 +49,11 @@
 		<Saos animation={'from-left 2s cubic-bezier(0.35, 0.5, 0.65, 0.95) both'}>
 			<div class="h-fit pt-10 md:pt-20">
 				<Price />
+			</div>
+		</Saos>
+		<Saos animation={'from-left 2s cubic-bezier(0.35, 0.5, 0.65, 0.95) both'}>
+			<div class="h-fit pt-10 md:pt-20">
+				<Price2 />
 			</div>
 		</Saos>
 		<Saos animation={'from-left 2s cubic-bezier(0.35, 0.5, 0.65, 0.95) both'}>

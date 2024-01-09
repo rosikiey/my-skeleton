@@ -48,18 +48,18 @@
 </script>
 
 <svelte:head>
-	<title>Software Erp</title>
+	<title>Brackets.ERP</title>
 	<meta
 		name="description"
-		content="Jasa pembuatan aplikasi perusahaan berbasis web, android, ios"
+		content="Jasa pembuatan software erp perusahaan berbasis web, android, ios"
 	/>
 	<script type="application/ld+json">
 		{
 		"@context": "http://schema.org",
 		"@type": "WebSite",
 		"name": "Aplikasi Pro",
-		"description": "jasa pembuatan aplikasi web android ios"
-		"url": "https://aplikasipro.id",
+		"description": "jasa pembuatan software erp berbasis web android ios"
+		"url": "https://brackets.id",
 		}
 	</script>
 </svelte:head>
