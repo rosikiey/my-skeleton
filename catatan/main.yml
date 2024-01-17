@@ -1,0 +1,48 @@
+name: node_app
+
+on: # specify the build to trigger the automated ci/cd
+    push:
+        branches:
+            - "main"
+
+jobs:
+    build:
+        name: Build Docker image
+        runs-on: ubuntu-latest # specify the build machine
+        steps:
+            - # checkout to the repository on the build machine
+                name: Checkout
+                uses: actions/checkout@v3
+            - # login to Docker Hub using the secrets provided
+                name: Login to Docker Hub
+                uses: docker/login-action@v2
+                with:
+                  username: ${{ secrets.DOCKERHUB_USERNAME }}
+                  password: ${{ secrets.DOCKERHUB_TOKEN }}
+            - # create a build kit builder instance
+                name: Set up Docker Buildx
+                uses: docker/setup-buildx-action@v2
+            - # build the container image and push it to Docker \
+                # Hub with the name rosykiey48.
+                name: Build and push
+                uses: docker/build-push-action@v4
+                with:
+                  context: .
+                  file: ./Dockerfile
+                  push: true
+                  tags: rosykiey48/csoftware:latest
+    deploy:
+        runs-on: ubuntu-latest
+        name: Continuous Deployment
+        needs: [build]
+        steps:
+            - # deploy into vps menggunakan ssh private key yang di dapat dari server
+                name: Deploy using ssh
+                uses: appleboy/ssh-action@master
+                with:
+                    host: ${{ secrets.SSH_HOST_BIZNETGIO }}
+                    username: ${{ secrets.SSH_USERNAME_BIZNETGIO }}
+                    key: ${{secrets.SSH_PRIVATEKEY_BIZNETGIO}}
+                    port: 22
+                    script: |
+                        docker stop testname;docker rm testname;docker pull rosykiey48/csoftware:latest;docker run -d --name testname -p 8081:8080 rosykiey48/csoftware:latest;[ -n "$(docker ps --filter "status=exited" --filter "status=dead" -q)" ]&& docker rm $(docker ps --filter "status=exited" --filter "status=dead" -q);[ -n "$(docker images -q --filter dangling=true -q --no-trunc)" ]&& docker rmi $(docker images --filter dangling=true -q --no-trunc)
