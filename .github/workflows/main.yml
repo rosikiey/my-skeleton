@@ -24,6 +24,6 @@ jobs:
         uses: caprover/deploy-from-github@v1.1.2
         with:
           server: https://brackets.id
-          app: 'app-erp'
+          app: 'testx'
           token: '${{ secrets.APP_TOKEN }}'
           image: 'ghcr.io/rosikiey/my-skeleton:latest'
